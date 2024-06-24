@@ -69,8 +69,6 @@ header {
 }
 
 .learning-image{
-    border-radius: 15px;
-    position: relative;
     z-index: 100;
     padding-top: 32px;
     padding-left: 24px;
@@ -115,6 +113,55 @@ button {
 button, text{
     color: black;
 }
+
 button:hover{
     background-color: yellow;
+}
+
+.second-section{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+    padding-top: 32px;
+}
+
+.event-sideline{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.img-event-sideline{
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+}
+
+.event-sideline, h2{
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    font-weight: bold;
+    color:black;
+}
+
+.event-sideline, h3{
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.special-h3{
+    padding-bottom: 32px;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 32px;
 }
