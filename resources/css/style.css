@@ -1,6 +1,15 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -14,7 +23,6 @@ header {
     z-index: 1000;
     top: 0;
     background-color: white;
-
 }
 
 .logo {
@@ -25,17 +33,16 @@ header {
     padding-left: 24px;
 }
 
-
-.text-colmar, .text-academy{
+.text-colmar, .text-academy {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 }
 
-.text-colmar h2{
+.text-colmar h2 {
     color: black;
 }
 
-.text-academy h2{
+.text-academy h2 {
     color: lightgrey;
 }
 
@@ -45,7 +52,6 @@ header {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 24px;
-
 }
 
 .nav {
@@ -61,46 +67,48 @@ header {
     padding-right: 16px;
 }
 
-.learning{
+.learning {
     z-index: 1;
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
     display: flex;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     align-items: center;
     padding-top: 64px;
 }
 
-.learning-image{
+.learning-image {
     z-index: 100;
     padding-top: 32px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 32px;
-
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.learning-info{
+.learning-info {
+    padding-right: 32px;
+    padding-left: 24px;
     z-index: 5;
-    text-align: left;
+    text-align: center;
+    padding-bottom: 180px;
 }
 
-.learning-info h1{
+.learning-info h1 {
+    font-size: 50px;
     font-weight: bold;
-    color:black;
-
-
+    color: black;
 }
 
-.learning-info h3{
+.learning-info h3 {
+    font-size: 20px;
     font-weight: lighter;
     color: black;
-
-
 }
 
-.learning-info button{
+.learning-info button {
     transition: background-color 3s ease;
     padding: 8px 60px;
     text-align: center;
@@ -109,43 +117,54 @@ header {
 }
 
 button {
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     background-color: antiquewhite;
     width: 100%;
-    height: 100%;
+    height: 65px;
+    border-radius: 8px;
+}
+
+
+h4 {
+    font-weight: lighter;
+    text-align: center;
 }
 
 button text{
-    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
-
-button:hover{
+button:hover {
     background-color: yellow;
+    font-family: cursive;
 }
 
-.second-section{
+.second-section {
     display: flex;
+    flex-direction: row;
     padding-top: 32px;
     padding-bottom: 32px;
-
-
 }
 
-.event-sideline{
-
-
+.event-sideline {
 }
 
-.event-sideline h2{
+.img-event-sideline {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.event-sideline h2 {
     padding-top: 32px;
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 24px;
-    font-weight: bol    d;
-    color:black;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
 }
 
-.event-sideline h3{
+.event-sideline h3 {
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 32px;
@@ -153,13 +172,65 @@ button:hover{
     color: grey;
 }
 
-.special-h3{
+.special-h3 {
     padding-bottom: 32px;
 }
 
-.events{
+.events {
     display: flex;
     flex-direction: column;
     padding-left: 24px;
     padding-top: 32px;
+    border: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.orientation,
+.our-campus,
+.our-guest-lecture {
+    border: 1px solid lightgrey;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.orientation-img,
+.our-campus-img,
+.guest-lecture-img {
+    flex: 1;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 1px;
+}
+
+.information-text {
+    text-align: center;
+    flex: 2;
+    max-width: 65%;
+    flex: 1 1 65%;
+}
+
+.orientation h2,
+.our-campus h2,
+.our-guest-lecture h2 {
+    margin: 0;
+    text-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.orientation h3,
+.our-campus h3,
+.our-guest-lecture h3 {
+    margin: 8px 0;
+    font-weight: lighter;
+}
+
+.orientation a,
+.our-campus a,
+.our-guest-lecture a {
+    margin: 8px 0;
+    font-weight: lighter;
 }
