@@ -124,16 +124,16 @@ button {
     border-radius: 8px;
 }
 
-
 h4 {
     font-weight: lighter;
     text-align: center;
 }
 
-button text{
+button text {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
 button:hover {
     background-color: yellow;
     font-family: cursive;
@@ -233,4 +233,148 @@ button:hover {
 .our-guest-lecture a {
     margin: 8px 0;
     font-weight: lighter;
+}
+
+.learning-3 {
+    display: flex;
+    flex-direction: column;
+    color:rgb(70, 68, 68);
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.learning-3 h1 {
+    font-size: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.start_learning {
+    list-style: none;
+    display: flex;
+}
+
+.start_learning li {
+    margin: 32px;
+    width: 33%;
+}
+
+.software_engineering, .computer_art, .design, .data, .business, .marketing {
+    background-color: white;
+}
+
+.software_engineering img, .computer_art img, .design img, .data img, .business img, .marketing img {
+    width: 100%;
+    height: auto;
+}
+
+.software_engineering h3, .computer_art h3, .design h3, .data h3, .business h3, .marketing h3 {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.software_engineering p, .computer_art p, .design p, .data p, .business p, .marketing p{
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.centered-text{
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 32px;
+    text-align: center;
+}
+.thesis {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.thesis-left{
+    align-items: left;
+    flex-flow: left;
+    width: 60%;
+}
+.thesis video{
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+}
+
+.thesis h2 {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+
+.thesis-left p {
+    padding-bottom: 32px;
+    padding-left: 24px;
+}
+
+.thesis ul {
+    width: 40%;
+    display: column;
+    flex-direction: row;
+    text-wrap: none;
+    list-style: none;
+}
+
+.fisma{
+    background-color: lightgray;
+}
+.thesis ul li {
+    display: flex;
+}
+
+.thesis ul li img{
+    height: auto;
+    width: 35%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 16px;
+}
+
+.thesis ul li h3{
+    padding-top: 32px;
+    font-size: 32px;
+}
+
+.thesis ul li p{
+    padding-right: 24px;
+    padding-bottom: 32px;
+    font-weight: lighter;
+    font-size: 16px;
+    color: grey;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+    padding: 10px 0;
+}
+
+.right-aligned {
+    padding-top: 16px;
+    padding-left: 24px;
+    text-align: right;
+}
+
+.left-aligned {
+    padding-top: 16px;
+    text-align: left;
 }
