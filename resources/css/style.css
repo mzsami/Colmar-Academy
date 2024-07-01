@@ -19,12 +19,12 @@ header {
     top: 0;
     background-color: #1E3A5F;
     color: white;
+    padding: 0 16px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    padding-left: 24px;
 }
 
 .text-colmar, .text-academy {
@@ -35,7 +35,6 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    padding-right: 24px;
 }
 
 .nav {
@@ -120,6 +119,11 @@ button:hover {
 
 .img-event-sideline {
     padding: 0 24px;
+}
+
+.img-event-sideline img {
+    width: 100%;
+    height: auto;
 }
 
 .event-sideline h2 {
@@ -293,3 +297,204 @@ button:hover {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    header {
+        padding: 8px 16px;
+    }
+
+    .logo, .menu {
+        flex: 1;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .learning {
+        flex-direction: column;
+        padding-top: 64px;
+    }
+
+    .learning-image {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .learning-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .learning-info {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .learning-info h1 {
+        font-size: 32px;
+    }
+
+    .learning-info h3 {
+        font-size: 16px;
+    }
+
+    .learning-info button {
+        padding: 8px 32px;
+        font-size: 14px;
+    }
+
+    .second-section {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .event-sideline, .events {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .events {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .orientation, .our-campus, .our-guest-lecture {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .orientation-img, .our-campus-img, .guest-lecture-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .learning-3 {
+        padding: 16px;
+    }
+
+    .start_learning {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .start_learning li {
+        width: 90%;
+        margin: 16px auto;
+    }
+
+    .centered-text {
+        font-size: 32px;
+    }
+
+    .thesis {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .thesis-left {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .thesis ul {
+        width: 100%;
+        padding: 0;
+        16px;
+    }
+
+    .thesis ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .thesis ul li img {
+        width: 100%;
+        max-width: 300px;
+        padding: 16px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 16px;
+    }
+}
+
+/* Toggle Button for Mobile Navigation */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Active state for the navigation menu */
+.nav.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1E3A5F;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    padding: 16px;
+}
+
+.nav.active li {
+    width: 100%;
+    text-align: left;
+    padding: 16px 0;
+}
+
+.nav.active li a {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 768px) {
+    .second-section {
+        flex-direction: row;
+    }
+
+    .event-sideline {
+        width: 50%;
+    }
+
+    .events {
+        width: 50%;
+    }
+}
